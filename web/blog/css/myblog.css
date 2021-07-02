@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@700&family=Sunflower:wght@500&display=swap');
 
 /* 나눔고딕,  주아, 선플라워
@@ -35,7 +34,6 @@ body {
     border-radius: 5px;
 
     margin: 10px auto;
-
     box-shadow:  2px 2px 3px #DDD;
 
     padding: 10px;
@@ -181,7 +179,7 @@ a:hover {
 
 
 .title {
-     font-size: 1.5em;  
+    font-size: 1.5em;  
      font-weight: bold; 
      margin: 5px 0; 
      font-family: 'Sunflower', sans-serif;

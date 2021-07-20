@@ -1,30 +1,36 @@
-<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	// 스크립트릿 영역
-	java.util.Date now = new Date();
+	// 현재 세션 객체를 소멸시킨다. -> 세션에 저장된 속성들도 함께 소멸!!!!! 회원정보도 소멸
+	session.invalidate();
+
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-
 <style>
 </style>
-
 <script>
 </script>
-
 </head>
 <body>
-	<!-- 날짜와 시간을 출력 -->
-	<h1><%= now %></h1>
+
+	<h1>로그아웃 되었습니다.</h1>
+	<h3><a href="sessionView.jsp">세션 정보 확인하기</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-
-
-
-
-

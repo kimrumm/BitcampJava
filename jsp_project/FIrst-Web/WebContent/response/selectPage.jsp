@@ -1,30 +1,39 @@
-<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%
-	// 스크립트릿 영역
-	java.util.Date now = new Date();
-%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-
 <style>
 </style>
-
 <script>
 </script>
-
 </head>
 <body>
-	<!-- 날짜와 시간을 출력 -->
-	<h1><%= now %></h1>
+
+	<form action="resultPage.jsp">
+	
+		<select name="select">
+			<option value="0">forward</option>
+			<option value="1">sendRedirect</option>
+		</select>
+		<br>
+		<input type="submit">
+	
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-
-
-
-
-

@@ -1,30 +1,25 @@
-<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	// 스크립트릿 영역
-	java.util.Date now = new Date();
+	String[] players = (String[]) request.getAttribute("players");
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-
+<title>View Page</title>
 <style>
 </style>
-
 <script>
 </script>
-
 </head>
 <body>
-	<!-- 날짜와 시간을 출력 -->
-	<h1><%= now %></h1>
+	<h1>선수 리스트</h1>
+<%
+	for(int i=0 ; i<players.length; i++){
+		out.println(players[i]+"<br>");
+	}
+%>
+
 </body>
 </html>
-
-
-
-
-

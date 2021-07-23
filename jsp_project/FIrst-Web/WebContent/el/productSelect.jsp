@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%
-	session.setAttribute("userName", "손흥민");
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,10 +12,21 @@
 </head>
 <body>
 
-	<h1>세션에 사용자 이름을 저장했습니다. : 
-	<%= session.getAttribute("userName") %> 
-	/ ${userName} </h1>
-	<h3><a href="sessionView.jsp">세션의 속성 정보 확인</a></h3>
+
+	<h3>
+		
+		1. 선택한 상품 : ${param.select} 	<br>
+		2. 상품 설명 : ${product.display} <br>
+		<!-- display 변수는 없다!!!! -> EL 은 메소드를 호출하는것이다!!!! -->
+		3. 첫번째 상품 ${product.productList[0]}
+	
+	
+	
+	
+	</h3>
+
+
+
 
 
 

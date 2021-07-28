@@ -1,4 +1,4 @@
-<%@page import="guest.jdbc.ConnectionProvider"%>
+<%@page import="guest.jdbc.ConnectionProvider" %>
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
